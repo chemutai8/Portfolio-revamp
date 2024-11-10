@@ -1,0 +1,237 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Support Professional</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-laptop-code me-2"></i>IT Expert
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#expertise">Expertise</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center" id="about">
+        <div class="container"><br> <br> <br>
+            <img src="{%static 'images/workplace.jpg' %}" alt="" class="rounded-circle"width="300">
+            <h1 class="display-4 mb-4">CHEMUTAI DIANA</h1>
+            <p class="lead mb-4">I am an IT support specialist, specialized in system administration, networking, and technical support</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="#contact" class="btn btn-primary btn-lg">Hire Me</a>
+                <a href="#expertise" class="btn btn-outline-light btn-lg">View Expertise</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section class="py-5" id="expertise">
+        <div class="container">
+            <h2 class="text-center mb-5">Technical Expertise</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="text-center mb-3">
+                                <i class="fas fa-network-wired tech-icon"></i>
+                            </div>
+                            <h3 class="h5 text-center">Network Management</h3>
+                            <div class="mt-3">
+                                <div class="mb-2 d-flex justify-content-between">
+                                    <span>Network Configuration</span>
+                                </div>
+                                <div class="progress skill-progress">
+                                    <div class="progress-bar bg-primary" style="width: 95%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="text-center mb-3">
+                                <i class="fas fa-shield-alt tech-icon"></i>
+                            </div>
+                            <h3 class="h5 text-center">Security Management</h3>
+                            <div class="mt-3">
+                                <div class="mb-2 d-flex justify-content-between">
+                                    <span>Cybersecurity</span>
+                                </div>
+                                <div class="progress skill-progress">
+                                    <div class="progress-bar bg-primary" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="text-center mb-3">
+                                <i class="fas fa-server tech-icon"></i>
+                            </div>
+                            <h3 class="h5 text-center">System Administration</h3>
+                            <div class="mt-3">
+                                <div class="mb-2 d-flex justify-content-between">
+                                    <span>Server Management</span>
+                                </div>
+                                <div class="progress skill-progress">
+                                    <div class="progress-bar bg-primary" style="width: 92%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="py-5 bg-light" id="experience">
+        <div class="container">
+            <h2 class="text-center mb-5">Professional Experience</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="experience-item">
+                        <h3 class="h5">IT Support Intern</h3>
+                        <p class="text-muted">University of Nairobi | 2024 - Present</p>
+                        <ul>
+                            <li>Network maintenance for end-users</li>
+                            <li>Ticket resolutions for student emails and active directory issues</li>
+                            <li>Routine maintenance of ICT equipments; desktop computers, printers and scanners</li>
+                        </ul>
+                    </div>
+                    <div class="experience-item">
+                        <h3 class="h5">IT Support Attaché'</h3>
+                        <p class="text-muted">'Kenya Revenue Authority' |May 2019- August 2019</p>
+                        <ul>
+                            <li>Provided technical support for end-users</li>
+                            <li>Regular network maintenance</li>
+                            <li>Ticket resolution through company ticketing system</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="py-5" id="certifications">
+        <div class="container">
+            <h2 class="text-center mb-5">Certifications</h2>
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="certification-badge mb-3">
+                        <i class="fas fa-certificate fa-3x text-primary"></i>
+                    </div>
+                    <h4 class="h5 text-center">Huawei HCIA-Datacom</h4>
+                    <p class="text-center text-muted">Certified 2024</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="certification-badge mb-3">
+                        <i class="fas fa-shield-alt fa-3x text-primary"></i>
+                    </div>
+                    <h4 class="h5 text-center">ALX AiCE</h4>
+                    <p class="text-center text-muted">Certified 2024</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="certification-badge mb-3">
+                        <i class="fas fa-network-wired fa-3x text-primary"></i>
+                    </div>
+                    <h4 class="h5 text-center">CCNA</h4>
+                    <p class="text-center text-muted">Certified 2021</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-5 bg-light" id="contact">
+        <div class="container">
+            <h2 class="text-center mb-5">Get In Touch</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label class="form-label">Name</label>
+                                    <label>
+                                        <input type="text" class="form-control">
+                                    </label>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Email</label>
+                                    <label>
+                                        <input type="email" class="form-control">
+                                    </label>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Subject</label>
+                                    <label>
+                                        <select class="form-select">
+                                            <option>Technical Support</option>
+                                            <option>Network Configuration</option>
+                                            <option>Security Consultation</option>
+                                            <option>Other</option>
+                                        </select>
+                                    </label>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Message</label>
+                                    <label>
+                                        <textarea class="form-control" rows="2"></textarea>
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <div class="mb-3">
+                <a href="#" class="text-white mx-2"><i class="fab fa-linkedin fa-lg"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-github fa-lg"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-twitter fa-lg"></i></a>
+            </div>
+            <p class="mb-0">© 2024 Diana. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+{% endblock %}
+

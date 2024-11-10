@@ -1,0 +1,79 @@
+
+:root {
+    --primary-color: #2c3e50;
+    --accent-color: #3498db;
+}
+
+.tech-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin: 15px;
+    transition: transform 0.3s;
+}
+
+.tech-icon:hover {
+    transform: scale(1.2);
+    color: var(--accent-color);
+}
+
+
+
+
+.hero-section {
+    background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)),
+                url("../images/cyber.jpeg");
+    background-size: cover;
+    color: white;
+    padding: 120px 0;
+}
+
+.certification-badge {
+    width: 150px;
+    height: 150px;
+    background-color: #f8f9fa;
+    border-radius: 50%;
+    display: flex;
+    align-items: normal;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.certification-badge:hover,
+.experience-item {
+    border-left: 3px solid var(--accent-color);
+    padding-left: 20px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.experience-item::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background: var(--accent-color);
+    border-radius: 50%;
+    position: absolute;
+    left: -9px;
+    top: 0;
+}
+
+.skill-progress {
+    height: 25px;
+    background-color: #f8f9fa;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
